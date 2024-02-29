@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Website</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+      background-color: #321acaad;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+      
+    }
+    #dwn-geo-peers{animation: glowing 2s infinite; }
+   #downloadBtn{
+        animation: glowing 2s infinite;      
+    }
+    button:hover {
+        background-color: #0056b3; 
+    }
+    @keyframes glowing {
+        0% {
+            box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+        }
+        50% {
+            box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to thepeople's uncensored news</h1>
+    <p>experience super candid talk with ZERO LATENCY offline from a compressed gzip file (makes it downloading it faster) </p>
+    <button id="downloadBtn">Download</button>
+    <button id="downloadNewContentBtn">Download New Content Only automatically</button>
+<button id="sendAnalyticsBtn">Send over personal analytics (likes, watch time)</button>
+<button id="sendAna-auto-Btn">Send personal anaylitics automatically (ill show you how)</button><button id="dwn-peers">Download from other users </button>
+<button id="dwn-geo-peers">Download from the nearest geobased users (need location on)(fastest)</button>
+<button id="b-peer">Become a peer</button>
+</div>
+
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        // Your download code here
+    });
+
+    document.getElementById('sendAnalyticsBtn').addEventListener('click', function() {
+        // Your analytics sending code here
+        alert('Sending personal analytics...');
+    });
+
+    document.getElementById('downloadNewContentBtn').addEventListener('click', function() {
+        // Your code to download new content only
+        alert('Downloading new content only...');
+    });
+</script>
+</body>
+</html>
